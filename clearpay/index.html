@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClearPay — Payments infrastructure for growing businesses</title>
+<meta name="description" content="ClearPay gives startups transparent, real-time payment processing with no hidden fees — see your exact rate before you sign up.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">Clear<span>Pay</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+      <span>Menu</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+        <span class="icon" aria-hidden="true">◐</span>
+        <span class="toggle-label">Light</span>
+      </button>
+      <a class="btn btn-primary" href="contact.html">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Payments, itemized</p>
+        <h1>Every fee, shown before you charge a single customer.</h1>
+        <p class="lede">ClearPay is payment infrastructure built for startups who are tired of guessing what processing actually costs. One rate card, no surprise deductions, and a live calculator that shows your exact monthly total.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="pricing.html">Run the numbers</a>
+          <a class="btn btn-secondary" href="features.html">See what's included</a>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><b>1.8%</b><span>Lowest processing rate</span></div>
+          <div class="stat"><b>&lt; 2 days</b><span>Average payout time</span></div>
+          <div class="stat"><b>0</b><span>Hidden line items</span></div>
+        </div>
+      </div>
+
+      <div class="ledger-card reveal" aria-hidden="true">
+        <header>
+          <span>Monthly statement</span>
+          <span>Growth plan</span>
+        </header>
+        <div class="ledger-row"><span>Processing volume</span><span class="amount">$42,000.00</span></div>
+        <div class="ledger-row"><span>Card processing (2.4%)</span><span class="amount">$1,008.00</span></div>
+        <div class="ledger-row"><span>Per-transaction fee</span><span class="amount">$168.00</span></div>
+        <div class="ledger-row"><span>Volume discount</span><span class="amount">-$117.60</span></div>
+        <div class="ledger-total"><span>You pay</span><span class="amount">$1,058.40</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <p class="eyebrow">Why teams switch</p>
+      <h2>Built for finance teams who read the fine print.</h2>
+      <div class="card-grid">
+        <div class="card reveal">
+          <span class="tag">Transparent</span>
+          <h3>Rate math you can check by hand</h3>
+          <p>Every statement breaks down into percentage fee, flat fee, and any volume discount — the same formula that powers the calculator on this site.</p>
+        </div>
+        <div class="card reveal">
+          <span class="tag">Fast</span>
+          <h3>Payouts in under two days</h3>
+          <p>Funds settle to your bank account on a fixed schedule, with the same cutoff time every business day.</p>
+        </div>
+        <div class="card reveal">
+          <span class="tag">Flexible</span>
+          <h3>Switch plans without a call</h3>
+          <p>Move between Starter, Growth, and Scale from your dashboard as your transaction volume changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="ledger-card" style="max-width:none; display:grid; grid-template-columns: 1fr auto; align-items:center; gap: var(--space-md);">
+        <div>
+          <h3 style="margin-bottom:0.2em;">See your own numbers in under a minute</h3>
+          <p style="margin:0;">Enter your monthly volume and average ticket size — the calculator updates as you type.</p>
+        </div>
+        <a class="btn btn-primary" href="pricing.html">Open calculator</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <span>&copy; 2026 ClearPay, Inc. A fictional company for demonstration purposes.</span>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* =========================================================
+   ClearPay Design Tokens
+   A ledger-inspired palette: ink navy, paper, emerald & brass.
+   ========================================================= */
+
+:root {
+  /* ---- Color: base palette ---- */
+  --color-ink-900: #0E1620;
+  --color-ink-700: #1B2836;
+  --color-ink-500: #3C4A59;
+  --color-paper-000: #F4F6F2;
+  --color-paper-100: #E9ECE5;
+  --color-line-200: #D6DBD1;
+  --color-emerald-600: #1F7A5C;
+  --color-emerald-700: #175C45;
+  --color-emerald-100: #DCEFE6;
+  --color-brass-500: #C08A2E;
+  --color-brass-100: #F3E6CB;
+  --color-red-600: #B3432E;
+  --color-red-100: #F6E2DC;
+
+  /* ---- Semantic (light theme default) ---- */
+  --bg-page: var(--color-paper-000);
+  --bg-surface: #FFFFFF;
+  --bg-surface-alt: var(--color-paper-100);
+  --bg-inverse: var(--color-ink-900);
+  --text-primary: var(--color-ink-900);
+  --text-secondary: var(--color-ink-500);
+  --text-on-inverse: var(--color-paper-000);
+  --text-on-accent: #FFFFFF;
+  --border-default: var(--color-line-200);
+  --border-strong: var(--color-ink-500);
+  --accent-primary: var(--color-emerald-600);
+  --accent-primary-hover: var(--color-emerald-700);
+  --accent-secondary: var(--color-brass-500);
+  --accent-on-primary-tint: var(--color-emerald-100);
+  --danger: var(--color-red-600);
+  --danger-tint: var(--color-red-100);
+  --focus-ring: #1B2836;
+
+  --shadow-1: 0 1px 2px rgba(14, 22, 32, 0.06), 0 1px 1px rgba(14, 22, 32, 0.04);
+  --shadow-2: 0 8px 24px rgba(14, 22, 32, 0.10);
+
+  /* ---- Type ---- */
+  --font-display: "Newsreader", "Iowan Old Style", "Georgia", serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --step--1: clamp(0.80rem, 0.77rem + 0.15vw, 0.89rem);
+  --step-0:  clamp(1.00rem, 0.96rem + 0.20vw, 1.13rem);
+  --step-1:  clamp(1.20rem, 1.13rem + 0.35vw, 1.42rem);
+  --step-2:  clamp(1.44rem, 1.32rem + 0.60vw, 1.78rem);
+  --step-3:  clamp(1.80rem, 1.58rem + 1.05vw, 2.40rem);
+  --step-4:  clamp(2.30rem, 1.92rem + 1.85vw, 3.40rem);
+  --step-5:  clamp(2.90rem, 2.30rem + 2.90vw, 4.60rem);
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* ---- Space (fluid) ---- */
+  --space-2xs: clamp(0.35rem, 0.32rem + 0.15vw, 0.5rem);
+  --space-xs:  clamp(0.6rem, 0.55rem + 0.25vw, 0.85rem);
+  --space-sm:  clamp(0.9rem, 0.8rem + 0.4vw, 1.25rem);
+  --space-md:  clamp(1.4rem, 1.2rem + 0.9vw, 2rem);
+  --space-lg:  clamp(2.2rem, 1.8rem + 1.8vw, 3.4rem);
+  --space-xl:  clamp(3.2rem, 2.5rem + 3.2vw, 5.5rem);
+  --space-2xl: clamp(4.5rem, 3.4rem + 5vw, 8rem);
+
+  /* ---- Layout ---- */
+  --content-max: 74rem;
+  --content-narrow: 42rem;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --border-w: 1px;
+
+  --duration-fast: 150ms;
+  --duration-base: 260ms;
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+/* ---- Dark theme override ---- */
+[data-theme="dark"] {
+  --bg-page: #0B1119;
+  --bg-surface: #121B26;
+  --bg-surface-alt: #17212D;
+  --bg-inverse: var(--color-paper-000);
+  --text-primary: #EDF1EC;
+  --text-secondary: #9FADB9;
+  --text-on-inverse: var(--color-ink-900);
+  --border-default: #263241;
+  --border-strong: #48586A;
+  --accent-primary: #3FA383;
+  --accent-primary-hover: #58BC9C;
+  --accent-secondary: #D8A64F;
+  --accent-on-primary-tint: #16302A;
+  --danger: #E08469;
+  --danger-tint: #3A211C;
+  --focus-ring: #D8A64F;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+  }
+}

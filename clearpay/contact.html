@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — ClearPay</title>
+<meta name="description" content="Get in touch with the ClearPay team about pricing, integration, or support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">Clear<span>Pay</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+      <span>Menu</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+        <span class="icon" aria-hidden="true">◐</span>
+        <span class="toggle-label">Light</span>
+      </button>
+      <a class="btn btn-primary" href="contact.html">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Tell us about your business.</h1>
+      <p class="lede">Fields are checked as you fill them in. Nothing is sent anywhere in this demo — submitting shows a confirmation message.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <form id="contact-form" class="form-grid" novalidate>
+
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+          <p class="error-msg" id="name-error"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required>
+          <p class="error-msg" id="email-error"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="company">Company <span class="hint">(optional)</span></label>
+          <input type="text" id="company" name="company" autocomplete="organization" aria-describedby="company-error">
+          <p class="error-msg" id="company-error"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="topic">What's this about?</label>
+          <select id="topic" name="topic" aria-describedby="topic-error" required>
+            <option value="">Choose a topic</option>
+            <option value="pricing">Pricing &amp; plans</option>
+            <option value="integration">Integration &amp; API</option>
+            <option value="support">Existing account support</option>
+            <option value="other">Something else</option>
+          </select>
+          <p class="error-msg" id="topic-error"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" aria-describedby="message-error" required></textarea>
+          <p class="error-msg" id="message-error"></p>
+        </div>
+
+        <div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </div>
+
+        <p id="form-status" class="form-status" role="alert"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <span>&copy; 2026 ClearPay, Inc. A fictional company for demonstration purposes.</span>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

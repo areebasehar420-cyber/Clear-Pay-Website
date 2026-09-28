@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing calculator — ClearPay</title>
+<meta name="description" content="Estimate your monthly ClearPay processing cost in real time by plan, volume, and average ticket size.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">Clear<span>Pay</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+      <span>Menu</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html" aria-current="page">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+        <span class="icon" aria-hidden="true">◐</span>
+        <span class="toggle-label">Light</span>
+      </button>
+      <a class="btn btn-primary" href="contact.html">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <p class="eyebrow">Pricing</p>
+      <h1>Estimate your monthly cost before you sign up.</h1>
+      <p class="lede">Adjust your processing volume, average ticket size, and plan. The total below recalculates immediately — no page reload, no email required.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <form id="calculator" class="calc-layout">
+
+        <div class="calc-panel">
+          <fieldset style="border:none; padding:0; margin:0;">
+            <legend class="visually-hidden">Calculator inputs</legend>
+
+            <div class="field">
+              <label for="volume">
+                Monthly processing volume
+                <span class="value" id="volume-value">$25,000</span>
+              </label>
+              <input type="range" id="volume" name="volume" min="1000" max="250000" step="500" value="25000" aria-describedby="volume-hint">
+              <p class="hint" id="volume-hint" style="margin:0.3em 0 0; font-size:0.85rem; color:var(--text-secondary);">Total card &amp; bank transfer sales you expect per month.</p>
+            </div>
+
+            <div class="field">
+              <label for="avg-ticket">
+                Average transaction size
+                <span class="value" id="avg-ticket-value">$50.00</span>
+              </label>
+              <input type="range" id="avg-ticket" name="avgTicket" min="5" max="1000" step="5" value="50">
+            </div>
+
+            <div class="field">
+              <span style="display:block; font-size:var(--step--1); font-weight:600; margin-bottom:var(--space-2xs);">Plan</span>
+              <div class="plan-options">
+                <label class="plan-option">
+                  <input type="radio" name="plan" value="starter" checked>
+                  <span class="plan-card"><b>Starter</b>2.9% + 30¢</span>
+                </label>
+                <label class="plan-option">
+                  <input type="radio" name="plan" value="growth">
+                  <span class="plan-card"><b>Growth</b>2.4% + 20¢</span>
+                </label>
+                <label class="plan-option">
+                  <input type="radio" name="plan" value="scale">
+                  <span class="plan-card"><b>Scale</b>1.8% + 10¢</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div>
+          <div class="result-card" role="status" aria-live="polite">
+            <p class="result-label">Estimated monthly cost</p>
+            <p class="result-amount" id="result-amount">$1,025.00</p>
+            <p class="result-label" id="result-tx-count">500 transactions / mo</p>
+            <div class="result-breakdown">
+              <div><span>Percentage fee</span><span class="amount" id="breakdown-percent">$725.00</span></div>
+              <div><span>Per-transaction fee</span><span class="amount" id="breakdown-flat">$150.00</span></div>
+              <div><span>Subtotal</span><span class="amount" id="breakdown-subtotal">$875.00</span></div>
+              <div><span>Volume discount</span><span class="amount" id="breakdown-discount">-$0.00</span></div>
+            </div>
+          </div>
+          <p class="hint" style="font-size:0.85rem; color:var(--text-secondary); margin-top:var(--space-sm);">Figures are illustrative. Growth and Scale include a 10% and 18% discount on the subtotal above.</p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <h2>Plan comparison</h2>
+      <div class="card-grid">
+        <div class="card reveal">
+          <h3>Starter</h3>
+          <p>2.9% + 30¢ per transaction. No monthly minimum — best for early-stage volume under $10k/month.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Growth</h3>
+          <p>2.4% + 20¢ per transaction, with a 10% discount applied to your subtotal automatically once you're on this plan.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Scale</h3>
+          <p>1.8% + 10¢ per transaction, with an 18% discount — built for teams processing over $100k/month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <span>&copy; 2026 ClearPay, Inc. A fictional company for demonstration purposes.</span>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/pricing.js"></script>
+</body>
+</html>

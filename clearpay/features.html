@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features — ClearPay</title>
+<meta name="description" content="Explore ClearPay's payment processing, payouts, reporting, and developer tools — filter by category to find what you need.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">Clear<span>Pay</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+      <span>Menu</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html" aria-current="page">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+        <span class="icon" aria-hidden="true">◐</span>
+        <span class="toggle-label">Light</span>
+      </button>
+      <a class="btn btn-primary" href="contact.html">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section style="padding-bottom: 0;">
+    <div class="wrap">
+      <p class="eyebrow">Product</p>
+      <h1>One platform, every piece of the money movement.</h1>
+      <p class="lede">Filter by category to see exactly what ClearPay handles — from taking a payment to reconciling it in your books.</p>
+
+      <div class="filter-bar" data-filter-bar role="group" aria-label="Filter features by category">
+        <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All features</button>
+        <button class="filter-btn" type="button" data-filter="processing" aria-pressed="false">Processing</button>
+        <button class="filter-btn" type="button" data-filter="payouts" aria-pressed="false">Payouts</button>
+        <button class="filter-btn" type="button" data-filter="reporting" aria-pressed="false">Reporting</button>
+        <button class="filter-btn" type="button" data-filter="developer" aria-pressed="false">Developer tools</button>
+      </div>
+      <p id="filter-status" class="visually-hidden" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section style="padding-top: var(--space-md);">
+    <div class="wrap card-grid" style="margin-top:0;">
+
+      <article class="card feature-card reveal" data-category="processing">
+        <span class="tag">Processing</span>
+        <h3>Card &amp; bank transfer capture</h3>
+        <p>Accept cards, ACH, and bank transfers through one integration, with the same settlement schedule for every method.</p>
+      </article>
+
+      <article class="card feature-card reveal" data-category="processing">
+        <span class="tag">Processing</span>
+        <h3>Fraud screening included</h3>
+        <p>Every transaction is scored automatically at no extra cost — no separate fraud-tools add-on to negotiate.</p>
+      </article>
+
+      <article class="card feature-card reveal" data-category="payouts">
+        <span class="tag">Payouts</span>
+        <h3>Two-day standard payouts</h3>
+        <p>Funds move to your bank account on a fixed two-business-day schedule, visible on your dashboard the moment a charge settles.</p>
+      </article>
+
+      <article class="card feature-card reveal" data-category="payouts">
+        <span class="tag">Payouts</span>
+        <h3>Instant payout option</h3>
+        <p>Move eligible balances to a debit card in minutes for a flat, disclosed fee — shown before you confirm.</p>
+      </article>
+
+      <article class="card feature-card reveal" data-category="reporting">
+        <span class="tag">Reporting</span>
+        <h3>Itemized monthly statements</h3>
+        <p>Every fee is broken into percentage rate, flat per-transaction charge, and any volume discount applied.</p>
+      </article>
+
+      <article class="card feature-card reveal" data-category="reporting">
+        <span class="tag">Reporting</span>
+        <h3>Exportable ledgers</h3>
+        <p>Download CSV ledgers that match your accounting periods, ready to hand to a bookkeeper or import into your books.</p>
+      </article>
+
+      <article class="card feature-card reveal" data-category="developer">
+        <span class="tag">Developer tools</span>
+        <h3>REST API &amp; webhooks</h3>
+        <p>Trigger and listen for payment events with a documented REST API and signed webhook payloads.</p>
+      </article>
+
+      <article class="card feature-card reveal" data-category="developer">
+        <span class="tag">Developer tools</span>
+        <h3>Sandbox environment</h3>
+        <p>Test full payment flows against realistic sample data before you ever touch production keys.</p>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <span>&copy; 2026 ClearPay, Inc. A fictional company for demonstration purposes.</span>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/features.js"></script>
+</body>
+</html>
